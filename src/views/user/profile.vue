@@ -1,6 +1,9 @@
 <template>
-  <div>
-      编辑资料模块
+  <div class="container">
+    <!-- 导航 显示返回箭头 -->
+    <!-- click-left 点击左侧事件 -->
+    <!-- $router.go(-1) 和 $router.back()  都是返回上一页 -->
+    <van-nav-bar title="编辑资料" right-text="保存" left-arrow @click-left="$router.back()"></van-nav-bar>
   </div>
 </template>
 

@@ -17,6 +17,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     // 专门放置需要共享的状态
+    // { token: '',  refeshtoken:'' }
     user: auth.getUser // 就是我们token信息的对象  做前端持久化 如果缓存有token 读取缓存的token
   },
   // 要改token 只能通过 mutations
